@@ -78,6 +78,18 @@ function bitcoinPrice() {
  
         document.getElementById('price-label-Lira').innerHTML = LiraPrice;
         document.getElementById('price-symbol-Lira').innerHTML = LiraSymbol;
+
+
+         // button
+        let button = document.querySelector('button');
+
+        button.addEventListener('click', (e) => {
+          if(confirm('Are you sure ?')) {
+            location.href = "https://www.x-rates.com/";
+          }
+        });
+
+       }
       }
       else {
         alert('Something went wrong, please come back later.');
@@ -85,8 +97,8 @@ function bitcoinPrice() {
     }
   }
   console.log('bitcoinPrice');
+
   
-}
 
 
 setInterval(bitcoinPrice, 1000); //Repeat the function every 1 second

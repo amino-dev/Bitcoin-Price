@@ -38,7 +38,7 @@ body {
  /*----------------------------------------*/
  /* Currency price section
  /*----------------------------------------*/
-  #price {
+  .price {
     font-size: 1.45rem;
   }
 
@@ -49,21 +49,25 @@ body {
  /*----------------------------------------*/
  /* Currency price section for small sizes
  /*----------------------------------------*/
-  @media screen and (min-width: 440px) and (max-width: 495px) {
-    #price { font-size: 1.3rem; }  
+
+  @media screen and (min-width: 510px) and (max-width: 570px) {
+    .price { font-size: 1.3rem; }  
   }
 
-
-  @media screen and (min-width: 365px) and (max-width: 440px) {
-    #price { font-size: 1.1rem; }  
+  @media screen and (min-width: 440px) and (max-width: 510px) {
+    .price { font-size: 1.1rem; }  
   }
 
-  @media screen and (min-width: 340px) and (max-width: 365px) {
-    #price { font-size: 1rem; }  
+  @media screen and (min-width: 390px) and (max-width: 440px) {
+    .price { font-size: 0.95rem; }  
+  }
+
+  @media screen and (min-width: 340px) and (max-width: 390px) {
+    .price { font-size: 0.8rem; }  
   }
 
   @media screen and (min-width: 320px) and (max-width: 340px) {
-    #price { font-size: 0.9rem; }  
+    .price { font-size: 0.75rem; }  
   }
 
  /*----------------------------------------*/
