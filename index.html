@@ -5,93 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitcoin Price</title>
 
-<!-- Stylesheets -->
-<link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/> 
 
 
-<!-- Main Stylesheets -->
-<link rel="stylesheet" href="css/style.css"/>
+  <!-- Main Stylesheets -->
+  <link rel="stylesheet" href="css/style.css"/>
 
 </head>
 <body>
-    <h1 class="text-center mt-4 mb-4">Bitcoin Price</h1>
 
-    <div class="container">
+  <!-- Description section -->
+  <div class="container description-section ">
+    <h1 class="text-center mt-4 mb-4">Bitcoin Price</h1>
+    <div class="bitcoin-img  d-flex justify-content-center mb-5">
+      <img src="https://img.icons8.com/ultraviolet/40/ffffff/bitcoin.png"/>
+    </div>
+    <p class="text-center description-text mt-3">Bitcoin is a digital currency that was created in January 2009.There are no physical Bitcoins.</p>
+    <p class="text-center description-text">This application exchanges rates to the most fiat currencies that Bitcoin trades.</p>
+    <p class="text-center description-text mb-5">We give you the last market price of one Bitcoin.</p>
+  </div>
+
+  <!-- Currency price section -->
+  <div class="container">
         
     <!-- Japenese Yen -->
-        <div class="row mb-3 justify-content-center">
-            <div id="price" class="">
-              <span><img src="https://img.icons8.com/emoji/48/000000/japan-emoji.png"/> Japenese Yen (JPY) : </span>
-              <span id="price-label-Yen"></span> 
-              <span id="price-symbol-Yen"></span>
-            </div>
-        </div>
+    <div class="row mb-3 justify-content-center">
+      <div id="price" class="">
+        <span><img src="https://img.icons8.com/emoji/48/000000/japan-emoji.png"/> Japenese Yen (JPY) : </span>
+        <span id="price-label-Yen" class="currency-label"></span> 
+        <span id="price-symbol-Yen" class="currency-symbol"></span>
+      </div>
+    </div>
 
     <!-- U.S Dollar -->
     <div class="row  mb-3 justify-content-center">
-        <div id="price" class="">
-            <span><img src="https://img.icons8.com/emoji/48/000000/united-states-emoji.png"/> U.S Dollar (USD) : </span>
-            <span id="price-label-Dollar"></span> 
-            <span id="price-symbol-Dollar"></span>
-         </div>
+      <div id="price" class="">
+        <span><img src="https://img.icons8.com/emoji/48/000000/united-states-emoji.png"/> U.S Dollar (USD) : </span>
+        <span id="price-label-Dollar"  class="currency-label" ></span> 
+        <span id="price-symbol-Dollar" class="currency-symbol"></span>
+      </div>
     </div>
 
     <!-- Euro -->
-     <div class="row  mb-3 justify-content-center">
-        <div id="price" class="">
-          <span><img src="https://img.icons8.com/emoji/48/000000/european-union-emoji.png"/> Euro (EUR) : </span>
-          <span id="price-label-Euro"></span> 
-          <span id="price-symbol-Euro"></span>
-        </div>
+    <div class="row  mb-3 justify-content-center">
+      <div id="price" class="">
+        <span><img src="https://img.icons8.com/emoji/48/000000/european-union-emoji.png"/> Euro (EUR) : </span>
+        <span id="price-label-Euro"  class="currency-label"></span> 
+        <span id="price-symbol-Euro" class="currency-symbol"></span>
+      </div>
     </div>
 
     <!-- British Pound -->
     <div class="row  mb-3 justify-content-center">
-        <div id="price" class="">
-          <span><img src="https://img.icons8.com/emoji/48/000000/united-kingdom-emoji.png"/> British Pound  (GBP) : </span>
-          <span id="price-label-Pound"></span> 
-          <span id="price-symbol-Pound"></span>
-        </div>
+      <div id="price" class="">
+        <span><img src="https://img.icons8.com/emoji/48/000000/united-kingdom-emoji.png"/> British Pound  (GBP) : </span>
+        <span id="price-label-Pound"  class="currency-label"></span> 
+        <span id="price-symbol-Pound" class="currency-symbol"></span>
+      </div>
     </div>
 
     <!-- Russian Rubble -->
     <div class="row mb-3 justify-content-center">
-        <div id="price" class="">
-          <span><img src="https://img.icons8.com/emoji/48/000000/russia-emoji.png"/> Russian Rubble (RUB) : </span>
-          <span id="price-label-Rubble"></span> 
-          <span id="price-symbol-Rubble"></span>
-        </div>
+      <div id="price" class="">
+        <span><img src="https://img.icons8.com/emoji/48/000000/russia-emoji.png"/> Russian Rubble (RUB) : </span>
+        <span id="price-label-Rubble"  class="currency-label"></span> 
+        <span id="price-symbol-Rubble" class="currency-symbol"></span>
+      </div>
     </div>
 
      <!-- Polish Zloty -->
-     <div class="row mb-3 justify-content-center">
-        <div id="price" class="">
-          <span><img src="https://img.icons8.com/emoji/48/000000/poland-emoji.png"/> Polish Zloty (PLN) : </span>
-          <span id="price-label-Zloty"></span> 
-          <span id="price-symbol-Zloty"></span>
-        </div>
+    <div class="row mb-3 justify-content-center">
+      <div id="price" class="">
+        <span><img src="https://img.icons8.com/emoji/48/000000/poland-emoji.png"/> Polish Zloty (PLN) : </span>
+        <span id="price-label-Zloty"  class="currency-label"></span> 
+        <span id="price-symbol-Zloty" class="currency-symbol"></span>
+      </div>
     </div>
 
      <!-- Australian Dollar -->
-     <div class="row mb-3 justify-content-center">
-        <div id="price" class="">
-          <span><img src="https://img.icons8.com/emoji/48/000000/australia-emoji.png"/> Australian Dollar (AUD) : </span>
-          <span id="price-label-Australian-Dollar"></span> 
-          <span id="price-symbol-Australian-Dollar"></span>
-        </div>
+    <div class="row mb-3 justify-content-center">
+      <div id="price" class="">
+        <span><img src="https://img.icons8.com/emoji/48/000000/australia-emoji.png"/> Australian Dollar (AUD) : </span>
+        <span id="price-label-Australian-Dollar"  class="currency-label"></span> 
+        <span id="price-symbol-Australian-Dollar" class="currency-symbol"></span>
+      </div>
     </div>
 
      <!-- Turkish Lira -->
-     <div class="row justify-content-center">
-        <div id="price" class="">
-          <span><img src="https://img.icons8.com/emoji/48/000000/turkey-flag-emoji.png"/> Turkish Lira (TYR) : </span>
-          <span id="price-label-Lira"></span> 
-          <span id="price-symbol-Lira"></span>
-        </div>
+    <div class="row justify-content-center mb-5">
+      <div id="price" class="">
+        <span><img src="https://img.icons8.com/emoji/48/000000/turkey-flag-emoji.png"/> Turkish Lira (TYR) : </span>
+        <span id="price-label-Lira"  class="currency-label"></span> 
+        <span id="price-symbol-Lira" class="currency-symbol"></span>
+      </div>
     </div>
 
-           
-    <script src="js/app.js"></script>
+  </div>
+
+  <!-- Copyright -->
+  <div class="container ">
+    <p class="copy-right text-center copyright mt-5 mb-4">
+      <i class="far fa-copyright" aria-hidden="true"></i> 2021 All rights reserved by Amino
+    </p>
+  </div>
+  
+  <script src="js/app.js"></script>
 
 </body>
 </html>

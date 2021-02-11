@@ -1,8 +1,75 @@
-h1 {
+body {
+  background-image: linear-gradient(90deg, #93a5cf 0%, #e4efe9 100%);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.bitcoin-img {
+  transform: scale(1.5);
+}
+
+/*----------------------------------------*/
+/* Description section
+/*----------------------------------------*/
+  h1 {
     color: #272343;
   }
   
+  .description-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;
+  }
+
+ /*----------------------------------------*/
+ /*  Description section for small sizes
+ /*----------------------------------------*/
+ @media screen and (min-width: 770px) and (max-width: 990px) {
+  .description-text { font-size: 1.2rem; }  
+  }
+
+@media screen and (min-width: 450px) and (max-width: 770px) {
+  .description-text { font-size: 1.16rem; }  
+  }
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .description-text { font-size: 0.96rem; }  
+  }
+
+ /*----------------------------------------*/
+ /* Currency price section
+ /*----------------------------------------*/
   #price {
     font-size: 1.45rem;
-    rem;
   }
+
+  .currency-label,.currency-symbol {
+    font-family: cursive; 
+  }
+
+ /*----------------------------------------*/
+ /* Currency price section for small sizes
+ /*----------------------------------------*/
+  @media screen and (min-width: 440px) and (max-width: 495px) {
+    #price { font-size: 1.3rem; }  
+  }
+
+
+  @media screen and (min-width: 365px) and (max-width: 440px) {
+    #price { font-size: 1.1rem; }  
+  }
+
+  @media screen and (min-width: 340px) and (max-width: 365px) {
+    #price { font-size: 1rem; }  
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 340px) {
+    #price { font-size: 0.9rem; }  
+  }
+
+ /*----------------------------------------*/
+ /* Copyright
+ /*----------------------------------------*/
+  .copyright {
+     font-size: 1.2rem;
+  }
+  
